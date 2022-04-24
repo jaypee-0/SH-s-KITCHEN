@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { popularMenuFood } from './products-data';
-import './product.css'
+
 
 
 const PopularMenu = () =>  {
