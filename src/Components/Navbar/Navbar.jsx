@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "../Navbar/Navbar.scss"
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from 'react'
-import logo from "../../Assets/logo.png"
+import logo from "./logo.png"
 import Button from '../Button/Button'
 
 const Navbar = () => {
