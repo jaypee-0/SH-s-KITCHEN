@@ -14,14 +14,11 @@ const PopularMenu = () =>  {
                     <Col lg="12" className="mb-5">
                         <h2>Popular Food Menu</h2>
                     </Col>
-                    {
-                        popularMenuFood.map(item => (
+                    {popularMenuFood.map((item) => (
                             <Col lg='3' key={item.id}>
-                              
+                              <Product_Card item={item} />
                             </Col>
-                        ))
-
-                    }
+                        ))}
                 </Row>
             </Container>
         </section>
