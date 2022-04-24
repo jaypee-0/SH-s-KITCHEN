@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "../Navbar/Navbar.scss"
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from 'react'
-// import logo from "../../Assets/logo.png"
+import logo from "../../Assets/logo.png"
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className='bg-light'>
             <nav className='navbarT container-fluid py-3'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}><img src="" alt="logo.png" /></Link>
+                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}><img className='' src={logo} alt="logo.png" />KITCHEN</Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <FA icon={click ? 'times': 'bars'} />
                     </div>

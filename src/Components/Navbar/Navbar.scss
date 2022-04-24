@@ -1,6 +1,11 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&display=swap');
 
+img {
+  width: 50px;
+  height: 50px;
+
+}
 .navbarT {
     height: 80px;
     display: flex;
@@ -21,7 +26,7 @@
   }
   
   .navbar-logo {
-    color: #5f6368;
+    color: #f68b1e;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -29,6 +34,10 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    font-family: 'Lato', sans-serif;
+    &:hover {
+      color: #f68b1e;
+    }
   }
   
   .nav-menu {
@@ -53,7 +62,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
   .nav-links:hover {
