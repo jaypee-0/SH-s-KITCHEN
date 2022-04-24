@@ -4,6 +4,7 @@ import "../Navbar/Navbar.scss"
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from 'react'
 import logo from "../../Assets/logo.png"
+import Button from '../Button/Button'
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -46,8 +47,9 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item'>
                         <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>Contact Us</Link>
-                    </li>
-                </ul>
+                    </li>                    
+                </ul>                
+                {button && <Button buttonStyle="btn--outline"><FA icon="fa-magnifying-glass" />Search</Button>}
                 </div>
             </nav>
 
