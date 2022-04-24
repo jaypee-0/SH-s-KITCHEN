@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { popularMenuFood } from './products-data';
+import Product_Card from './Product_Card';
 
 
 
@@ -15,18 +17,7 @@ const PopularMenu = () =>  {
                     {
                         popularMenuFood.map(item => (
                             <Col lg='3' key={item.id}>
-                                <div className='single_product'>
-                                    <div className="product_img">
-                                        <img src={item.imgUrl} alt="" />
-                                    </div>
-                                    <div className='product_content'>
-                                        <h6>{item.title}</h6>
-                                        <div className='d-flex aligh-items-center justify-content-between'>
-                                            <span className='price'> Price: $<span>{item.price}</span></span>
-                                        </div>
-                                    </div>
-
-                                </div>
+                              
                             </Col>
                         ))
 
