@@ -20,7 +20,7 @@ const ProductMenu = () => {
                     </Col>
                     {
                         fastFoodProducts.map(item => (
-                            <Col lg='3' key={item.id}>
+                            <Col lg='3' key={item.id} className='mb-4' >
                                 <div className="single_product">
                                     <div className="product_img">
                                         <img src={item.imgUrl} alt="" />
