@@ -1,0 +1,24 @@
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+section h2 {
+    color: #fff;
+
+    font-size: 2em;
+    font-weight: 2em; 
+}
+section p {
+    font-size: 1em;
+    color: #fff;
+    
+}
+
+.about_us{
+    background-color: #f68b1e;
+    padding: 2em;
+}
+section h4 {
+    font-size: 2em;
+}
