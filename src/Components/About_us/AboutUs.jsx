@@ -27,10 +27,11 @@ function aboutUs() {
                                 perferendis. Repellat possimus tempora magni ab! Id fuga fugit
                                 vitae quae saepe.
                             </p>
-                            <span><i class="ri-truck-line"></i></span>
+                        </div>
+                        <div className='single_feature'>
+                        <span><i class="ri-truck-line"></i></span>
                             <h6>Free Home Devilvery</h6>
                             <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.Iusto, quae.</p>
-
                         </div>
                     </Col>
                 </Row>

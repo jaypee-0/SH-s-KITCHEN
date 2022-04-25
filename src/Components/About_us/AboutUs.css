@@ -3,13 +3,13 @@
     width: 100%;
 }
 
-section h2 {
+.about_us h2 {
     color: #fff;
 
     font-size: 2em;
     font-weight: 2em; 
 }
-section p {
+.about_us p {
     font-size: 1em;
     color: #fff;
     
@@ -19,6 +19,31 @@ section p {
     background-color: #f68b1e;
     padding: 2em;
 }
-section h4 {
+.about_us h4 {
     font-size: 2em;
 }
+
+
+
+
+.about_us h6 {
+    font-size: 1.5em;
+}
+
+.single_feature span {
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+     background-color:#fff ;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    color: #f68b1e;
+    margin-bottom: 10px;
+      
+}
+
+.single_feature span i {
+    font-size: 1.5rem;
+}
+  
