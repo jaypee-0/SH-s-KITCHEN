@@ -1,11 +1,38 @@
 
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+
 import './product.css'
 import { Container, Row, Col } from 'reactstrap'
-import { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, coffeProducts } from './products-data'
+import { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts } from './products-data'
 
 const ProductMenu = () => {
-    return (
+
+ const [filter, setfilter] = useState ('RICE-MENU')
+ const [products, setProducts] = useState(fastFoodProducts)
+
+ useEffect(()=>{
+if (filter == 'RICE-MENU')
+    setProducts(riceMenuProducts)
+
+if (filter == 'FAST-FOOD')
+    setProducts(fastFoodProducts)
+
+if (filter == 'PIZZA')
+    setProducts(pizzaProducts)
+
+if (filter == 'DESSERT')
+    setProducts(dessertProducts)
+
+ if (filter == 'COFFEE')
+    setProducts(coffeeProducts)
+
+
+
+ },[filter])
+
+
+ 
+    return ( 
         <section>
             <Container>
                 <Row>
@@ -19,7 +46,7 @@ const ProductMenu = () => {
                         <button className='filter-btn'>Coffee</button>
                     </Col>
                     {
-                        fastFoodProducts.map(item => (
+                        products.map(item => (
                             <Col lg='3' key={item.id} className='mb-4' >
                                 <div className="single_product">
                                     <div className="product_img">
