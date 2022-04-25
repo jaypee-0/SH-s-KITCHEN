@@ -8,7 +8,7 @@ import './product.css'
 
 const PopularMenu = () => {
     return (
-        <section>
+        <section className='popular-food'> 
             <Container>
                 <Row>
                     <Col lg="12" className="mb-5">
@@ -26,7 +26,6 @@ const PopularMenu = () => {
                                         <span className="price"> Price: $<span>{item.price}</span></span>
                                     </div>
                                 </div>
-
                             </div>
                         </Col>
                     ))}

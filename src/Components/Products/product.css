@@ -1,0 +1,26 @@
+.popular-food {
+    padding-top: 2rem;
+}
+.popular-food h2 {
+ color: #f68b1e;
+ font-weight: 500;
+ font-size: 1.5rem;
+
+}
+
+.popular-food img {
+    width: 100%;
+    height: 100%;
+}
+
+.single_product {
+    border-radius: 10px;
+    cursor: pointer;
+    background: ghostwhite;
+
+}
+
+.single_product hover {
+    box-shadow: 5px 5px 10px -5px;
+}
+
