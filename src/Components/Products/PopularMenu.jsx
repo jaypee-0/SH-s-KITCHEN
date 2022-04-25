@@ -18,11 +18,11 @@ const PopularMenu = () => {
                         <Col lg='3' key={item.id}>
                             <div className="single_product">
                                 <div className="product_img">
-                                    <img src={item.imgUrl} alt="" className="w100" />
+                                    <img src={item.imgUrl} alt=""  />
                                 </div>
                                 <div className="product_content">
                                     <h6>{item.title}</h6>
-                                    <div className="d-flex aligh-items-center justify-content-between">
+                                    <div>
                                         <span className="price"> Price: $<span>{item.price}</span></span>
                                     </div>
                                 </div>
