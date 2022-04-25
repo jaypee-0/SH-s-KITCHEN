@@ -4,14 +4,10 @@ import { Container, Row, Col } from 'reactstrap';
 import { popularMenuFood } from './products-data';
 import './product.css'
 
-<<<<<<< HEAD
 
 
 
 const PopularMenu = (item) => {
-=======
-const PopularMenu = () => {
->>>>>>> cbdeb5db1372613a54599e59fc72efe49b0c180c
     return (
         <section className='popular-food'>
             <Container>
