@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { popularMenuFood } from './products-data';
 import './product.css'
 
-
-
 const PopularMenu = () => {
     return (
         <section>
