@@ -9,13 +9,14 @@ const ProductMenu = () => {
         <section>
             <Container>
                 <Row>
-                    <Col lg='12' className='text-center mb-5 '><h3>Our Menu Pack</h3> </Col>
+                    <Col lg='12' className='text-center mb-5 '>
+                        <h3 className='menu_title'>Our Menu Pack</h3></Col>
                     <Col lg='12' className='text-center mb-4'>
-                        <button className='btn'>Fast Food</button>
-                        <button className='btn'>Rice Menu</button>
-                        <button className='btn'>Pizza</button>
-                        <button className='btn'>Desserts</button>
-                        <button className='btn'>Coffee</button>
+                        <button className='filter-btn'>Fast Food</button>
+                        <button className='filter-btn active-btn'>Rice Menu</button>
+                        <button className='filter-btn'>Pizza</button>
+                        <button className='filter-btn'>Desserts</button>
+                        <button className='filter-btn'>Coffee</button>
                     </Col>
                     {
                         fastFoodProducts.map(item => (

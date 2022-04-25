@@ -16,7 +16,7 @@ const PopularMenu = (item) => {
                         <h2>Popular Food Menu</h2>
                     </Col>
                     {popularMenuFood.map((item) => (
-                        <Col lg='3' key={item.id}>
+                        <Col lg='3' key={item.id}  >
                             <div className="single_product">
                                 <div className="product_img">
                                     <img src={item.imgUrl} alt="" />
