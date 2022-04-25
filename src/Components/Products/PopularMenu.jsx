@@ -6,9 +6,10 @@ import './product.css'
 
 
 
-const PopularMenu = () => {
+
+const PopularMenu = (item) => {
     return (
-        <section className='popular-food'> 
+        <section className='popular-food'>
             <Container>
                 <Row>
                     <Col lg="12" className="mb-5">
@@ -18,7 +19,7 @@ const PopularMenu = () => {
                         <Col lg='3' key={item.id}>
                             <div className="single_product">
                                 <div className="product_img">
-                                    <img src={item.imgUrl} alt=""  />
+                                    <img src={item.imgUrl} alt="" />
                                 </div>
                                 <div className="product_content">
                                     <h6>{item.title}</h6>
