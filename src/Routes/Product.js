@@ -1,11 +1,11 @@
 import React from 'react'
-import PopularMenu from '../Components/Products/PopularMenu'
+
 
 
 const Product = () => {
   return (
     <div>  
-      <PopularMenu />
+    <h1>Products</h1>
     </div>
   )
 }
