@@ -3,17 +3,17 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import './AboutUs.css'
+import Pasta from '../Products/images/pasta.png'
 
 
 
-
-const aboutUs = () => {
+function aboutUs() {
     return (
         <section>
             <Container>
                 <Row>
                     <Col lg='6'>
-                        <img src="" alt="pasta" />
+                    <img src={Pasta} alt="Pasta" className='img' />
                     </Col>
 
                     <Col>
@@ -29,7 +29,7 @@ const aboutUs = () => {
                             </p>
                             <span><i class="ri-truck-line"></i></span>
                             <h6>Free Home Devilvery</h6>
-                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, quae.   </p>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.Iusto, quae.</p>
 
                         </div>
                     </Col>
