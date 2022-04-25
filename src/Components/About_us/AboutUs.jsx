@@ -9,7 +9,7 @@ import Pasta from '../Products/images/pasta.png'
 
 function aboutUs() {
     return (
-        <section>
+        <section  className='about_us'>
             <Container>
                 <Row>
                     <Col lg='6'>
