@@ -4,9 +4,16 @@ import { Container, Row, Col } from 'reactstrap';
 import { popularMenuFood } from './products-data';
 import './product.css'
 
+<<<<<<< HEAD
+
+
+
+const PopularMenu = (item) => {
+=======
 const PopularMenu = () => {
+>>>>>>> cbdeb5db1372613a54599e59fc72efe49b0c180c
     return (
-        <section className='popular-food'> 
+        <section className='popular-food'>
             <Container>
                 <Row>
                     <Col lg="12" className="mb-5">
@@ -16,7 +23,7 @@ const PopularMenu = () => {
                         <Col lg='3' key={item.id}>
                             <div className="single_product">
                                 <div className="product_img">
-                                    <img src={item.imgUrl} alt=""  />
+                                    <img src={item.imgUrl} alt="" />
                                 </div>
                                 <div className="product_content">
                                     <h6>{item.title}</h6>
