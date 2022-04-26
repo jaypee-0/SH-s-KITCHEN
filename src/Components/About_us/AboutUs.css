@@ -1,3 +1,6 @@
+
+
+
 .img {
     height: 100%;
     width: 100%;
@@ -18,16 +21,19 @@
 .about_us{
     background-color: #f68b1e;
     padding: 2em;
+
+ 
 }
 .about_us h4 {
     font-size: 2em;
+    font-weight: 2rem;
 }
 
 
 
 
 .about_us h6 {
-    font-size: 1.5em;
+    font-size: 0.8rem;
 }
 
 .single_feature span {
@@ -47,3 +53,23 @@
     font-size: 1.5rem;
 }
   
+.single_feature p {
+    font-size: 0.7rem;
+}
+
+ .features .feature_icon1{
+
+    background-color: rgb(37, 150, 106);
+    color: #fff;
+ }
+.features .feature_icon2 {
+
+    background-color: orange;
+    color: #fff;
+}
+
+.features .feature_icon3 {
+
+    background-color:skyblue;
+    color: #fff;
+}
