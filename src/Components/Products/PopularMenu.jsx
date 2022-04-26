@@ -3,7 +3,10 @@ import { Container, Row, Col } from 'reactstrap';
 import { popularMenuFood } from './products-data';
 import './product.css'
 
-const PopularMenu = () => {
+
+
+
+const PopularMenu = (item) => {
     return (
         <section className='popular-food'>
             <Container>
@@ -12,7 +15,7 @@ const PopularMenu = () => {
                         <h2>Popular Food Menu</h2>
                     </Col>
                     {popularMenuFood.map((item) => (
-                        <Col lg='3' key={item.id}>
+                        <Col lg='3' key={item.id}  >
                             <div className="single_product">
                                 <div className="product_img">
                                     <img src={item.imgUrl} alt="" />

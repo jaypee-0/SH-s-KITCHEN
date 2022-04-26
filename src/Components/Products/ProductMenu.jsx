@@ -1,25 +1,52 @@
 
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+
 import './product.css'
 import { Container, Row, Col } from 'reactstrap'
-import { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, coffeProducts } from './products-data'
+import { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, coffeeProducts } from './products-data'
 
 const ProductMenu = () => {
-    return (
+
+ const [filter, setFilter] = useState ('RICE-MENU')
+ const [products, setProducts] = useState(fastFoodProducts)
+
+ useEffect(()=>{
+if (filter === 'RICE-MENU')
+    setProducts(riceMenuProducts)
+
+if (filter === 'FAST-FOOD')
+    setProducts(fastFoodProducts)
+
+if (filter === 'PIZZA')
+    setProducts(pizzaProducts)
+
+if (filter === 'DESSERT')
+    setProducts(dessertProducts)
+
+ if (filter === 'COFFEE')
+    setProducts(coffeeProducts)
+
+
+
+ },[filter])
+
+
+ 
+    return ( 
         <section>
             <Container>
                 <Row>
-                    <Col lg='12' className='text-center mb-5 '><h3>Our Menu Pack</h3> </Col>
+                    <Col lg='12' className='text-center mb-5 '>
+                        <h3 className='menu_title'>Our Menu Pack</h3></Col>
                     <Col lg='12' className='text-center mb-4'>
-                        <button className='btn'>Fast Food</button>
-                        <button className='btn'>Rice Menu</button>
-                        <button className='btn'>Pizza</button>
-                        <button className='btn'>Desserts</button>
-                        <button className='btn'>Coffee</button>
+                        <button className='filter-btn 'onClick={()=> setFilter('FAST-FOOD')}>Rice Menu</button>
+                        <button className='filter-btn ' onClick={()=> setFilter('PIZZA')}>Pizza</button>
+                        <button className='filter-btn ' onClick={()=> setFilter('DESSERT')}>Desserts</button>
+                        <button className='filter-btn ' onClick={()=> setFilter('COFFEE')}>Coffee</button>
                     </Col>
                     {
-                        fastFoodProducts.map(item => (
-                            <Col lg='3' key={item.id}>
+                        products.map(item => (
+                            <Col lg='3' key={item.id} className='mb-4' >
                                 <div className="single_product">
                                     <div className="product_img">
                                         <img src={item.imgUrl} alt="" />
@@ -37,8 +64,6 @@ const ProductMenu = () => {
 
                         ))
                     }
-
-
                 </Row>
             </Container>
         </section>

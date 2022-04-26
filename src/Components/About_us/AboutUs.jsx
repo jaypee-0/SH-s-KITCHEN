@@ -4,6 +4,7 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import './AboutUs.css'
 import Pasta from '../Products/images/pasta.png'
+import 'remixicon/fonts/remixicon.css'
 
 
 
