@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className='bg-light'>
             <nav className='navbarT container-fluid py-3'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}><img className='' src={logo} alt="logo.png" /><span>KITCHEN</span></Link>
+                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}><img className='' src={logo} alt="logo.png" /><span className='d-none d-sm-block'>KITCHEN</span></Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <FA icon={click ? 'times': 'bars'} />
                     </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>Contact Us</Link>
                     </li>                    
                 </ul>                
-                {button && <Button buttonStyle="btn--outline"><FA icon="fa-magnifying-glass" />Search</Button>}
+                {button && <Button buttonStyle="btn--primary"><FA icon="fa-magnifying-glass" />Search</Button>}
                 </div>
             </nav>
 

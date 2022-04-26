@@ -1,0 +1,24 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Playfair+Display+SC&family=Roboto:wght@100&family=Space+Mono&display=swap');
+$ylcol: #f68b1e;
+.yellowColor{
+  color: #f68b1e;
+}
+
+#homeservices {
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  .cardex {    
+    border: 2px solid rgba(33,63,125,.06);
+    border-radius: 5px;
+    box-shadow: 3px 5px 20px rgb(0 0 0 / 4%);
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+  }p{
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "icon": "../images/offer.png",
+        "caption": "Discount",
+        "text": "Percentage or dollar discounts or coupons"
+    },
+    {
+        "id": "2",
+        "icon": "../images/fast-delivery.png",
+        "caption": "Fast Delivery",
+        "text": "Hassle-free delivery with us"
+    },
+    {
+        "id": "3",
+        "icon": "../images/food-serving.png",
+        "caption": "Tasty Meals",
+        "text": "Everything tastes good when you're hungry"
+    }
+]
