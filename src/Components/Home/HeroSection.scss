@@ -1,0 +1,47 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Playfair+Display+SC&family=Roboto:wght@100&family=Space+Mono&display=swap');
+$ylcol: #f68b1e;
+.yellowColor{
+  color: #f68b1e;
+}
+#homeHero {
+  .heroImage  {
+    max-width: 80%;
+    height: auto;
+  }
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #5f6368;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-style: italic;
+  } p {
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #homeHero {
+    .heroImage  {
+      max-width: 50%;
+      height: auto;
+    }h2 {
+      font-size: 48px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 996px) and (min-width: 740px) {
+  #homeHero {
+    .heroImage {
+      max-width: 100%;
+    }h2 {
+      font-size: 50px;
+    }
+  }
+}
