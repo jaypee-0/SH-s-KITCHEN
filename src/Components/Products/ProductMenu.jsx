@@ -7,23 +7,23 @@ import { fastFoodProducts, riceMenuProducts, pizzaProducts, dessertProducts, cof
 
 const ProductMenu = () => {
 
- const [filter, setfilter] = useState ('RICE-MENU')
+ const [filter, setFilter] = useState ('RICE-MENU')
  const [products, setProducts] = useState(fastFoodProducts)
 
  useEffect(()=>{
-if (filter == 'RICE-MENU')
+if (filter === 'RICE-MENU')
     setProducts(riceMenuProducts)
 
-if (filter == 'FAST-FOOD')
+if (filter === 'FAST-FOOD')
     setProducts(fastFoodProducts)
 
-if (filter == 'PIZZA')
+if (filter === 'PIZZA')
     setProducts(pizzaProducts)
 
-if (filter == 'DESSERT')
+if (filter === 'DESSERT')
     setProducts(dessertProducts)
 
- if (filter == 'COFFEE')
+ if (filter === 'COFFEE')
     setProducts(coffeeProducts)
 
 
@@ -39,11 +39,10 @@ if (filter == 'DESSERT')
                     <Col lg='12' className='text-center mb-5 '>
                         <h3 className='menu_title'>Our Menu Pack</h3></Col>
                     <Col lg='12' className='text-center mb-4'>
-                        <button className='filter-btn'>Fast Food</button>
-                        <button className='filter-btn active-btn'>Rice Menu</button>
-                        <button className='filter-btn'>Pizza</button>
-                        <button className='filter-btn'>Desserts</button>
-                        <button className='filter-btn'>Coffee</button>
+                        <button className='filter-btn 'onClick={()=> setFilter('FAST-FOOD')}>Rice Menu</button>
+                        <button className='filter-btn ' onClick={()=> setFilter('PIZZA')}>Pizza</button>
+                        <button className='filter-btn ' onClick={()=> setFilter('DESSERT')}>Desserts</button>
+                        <button className='filter-btn ' onClick={()=> setFilter('COFFEE')}>Coffee</button>
                     </Col>
                     {
                         products.map(item => (
@@ -65,8 +64,6 @@ if (filter == 'DESSERT')
 
                         ))
                     }
-
-
                 </Row>
             </Container>
         </section>
