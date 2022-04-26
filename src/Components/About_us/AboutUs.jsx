@@ -41,7 +41,7 @@ function aboutUs() {
                                 <div className='single_feature'>
                                     <span  className='feature_icon1'><i class="ri-money-dollar-circle-line"></i></span>
                                     <h6>Return & Refund</h6>
-                                    <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                    <p>Lorem ipsum dolor, sit loren consectetur.</p>
                                 </div>
                             </div>
 
