@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Routes, Route } from "react-router-dom";
 import Home from "./Routes/Home"
 import About from "./Routes/About"
 import Product from "./Routes/Product"
@@ -8,6 +8,7 @@ import FAQs from "./Routes/FAQs"
 import Navbar from "./Components/Navbar/Navbar"
 import Footer from "./Components/Footer/Footer"
 import "./Components/Fontawesome"
+import Error404 from "./Components/404/Error404"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path='/product' element={<Product />}></Route>        
         <Route exact path='/contact' element={<Contact />}></Route>
         <Route exact path='/faqs' element={<FAQs />}></Route>
+        <Route exact path='*' element={<Error404 />}></Route>
       </Routes>
       <div>
         <Footer />

@@ -1,0 +1,33 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Montserrat+Alternates:wght@300&family=Roboto:wght@100&family=Yeseva+One&display=swap');
+$ylcol: #f68b1e;
+.yellowColor{
+  color: #f68b1e;
+}
+
+#error {
+    img {
+        width: 300px;
+        height: auto;
+    }
+    h2 {        
+        font-family: "Yeseva One", cursive;
+        color: #5f6368;
+        font-size: 3rem;
+    }
+    a {
+        text-decoration: none;
+        color: #5f6368;
+        font-family: "Yeseva One", cursive;
+        background-color: $ylcol;
+        &:hover {
+            color: $ylcol;
+            background-color: #5f6368;
+        }
+    }
+    h5 {
+        font-size: 18px;
+        color: black;
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+}
