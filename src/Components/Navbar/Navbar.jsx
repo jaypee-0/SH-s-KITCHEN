@@ -47,6 +47,9 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item'>
                         <Link to="/contact" className='nav-links' onClick={closeMobileMenu}>Contact Us</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to="/faqs" className='nav-links' onClick={closeMobileMenu}>FAQs</Link>
                     </li>                    
                 </ul>                
                 {button && <Button buttonStyle="btn--primary"><FA icon="fa-magnifying-glass" />Search</Button>}

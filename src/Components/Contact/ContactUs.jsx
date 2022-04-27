@@ -1,21 +1,20 @@
 import React from 'react';
 import Contactimg from "../../Assets/contactimg.jpg";
+import CallIcon from '@mui/icons-material/Call';
 import "./contact.scss";
 
-function contact() {
+function ContactUs() {
   return (
     <div className='contacts'>
         <div className='leftside'
         style={{ backgroundImage: `url(${Contactimg})` }}>
     </div>
     <div className='rightside'>
-        <div className='top'>
             <h1>
-                <strong>Contact Us</strong> 
+                <strong>Want To Contact Us?</strong> 
             </h1>
-            <p> 0728990011</p>
-        </div>
-        <div className='bottom'>
+            <p> <CallIcon /> 0728990011</p>
+
             <h2> Have any questions for us? Send us a message!</h2>
             <form id="contact-form" method="POST">
                 <label htmlFor='name'>Full Name</label>
@@ -31,11 +30,10 @@ function contact() {
                 </textarea>
                 <button type='submit'> Send Message</button>
             </form>
-        </div>
     </div>
 
     </div>
   )
 }
 
-export default contact
+export default ContactUs
