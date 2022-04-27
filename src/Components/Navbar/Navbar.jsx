@@ -28,7 +28,7 @@ const Navbar = () => {
     window.addEventListener('resize', showButton)
 
     return (
-        <div className='bg-light'>
+        <div>
             <nav className='navbarT container-fluid py-3'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}><img className='' src={logo} alt="logo.png" /><span className='d-none d-sm-block'>KITCHEN</span></Link>
