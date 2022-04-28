@@ -1,10 +1,9 @@
 :root {
-  --primary: green;
+  --primary: #f68b1e;
 }
 
 .btnn {
-  padding: 8px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -12,20 +11,25 @@
 
 .btn--primary {
   background-color: var(--primary);
-  color: black;
+  color: rgba(245, 245, 245, 0.77);
   border: 1px solid var(--primary);
 }
 
 .btn--outline {
-  background-color: transparent;
+  background-color: #f68b1e1c;
   color: var(--primary);
   border: 1px solid var(--primary);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  font-weight: 600;
+}
+
+.btn--outline:hover {
+  background-color: inherit !important;
 }
 
 .btn--medium {
-  padding: 8px 20px;
+  padding: 8px 25px;
   font-size: 16px;
 }
 
@@ -36,13 +40,18 @@
 
 .btn--medium:hover,
 .btn--large:hover {
-  background-color: white;
-  color: green;
+  background-color: #f68a1ea6;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 ol, ul {
   padding-left: 0;
+}
+
+@media (max-width: 996px) and (min-width: 740px) {
+  .btn--medium {
+    padding: 8px 15px;
+  }
 }
 /*# sourceMappingURL=Button.css.map */

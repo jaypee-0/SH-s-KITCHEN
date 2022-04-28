@@ -1,4 +1,4 @@
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faBars, faTimes, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes, faMagnifyingGlass, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 
-library.add( faBars, faTimes, faMagnifyingGlass );
+library.add( faBars, faTimes, faMagnifyingGlass, faPaperPlane );

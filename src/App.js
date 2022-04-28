@@ -7,6 +7,7 @@ import Contact from "./Routes/Contact"
 import Navbar from "./Components/Navbar/Navbar"
 import Footer from "./Components/Footer/Footer"
 import "./Components/Fontawesome"
+import Error404 from "./Components/404/Error404"
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route exact path='/about' element={<About />}></Route>
         <Route exact path='/product' element={<Product />}></Route>        
         <Route exact path='/contact' element={<Contact />}></Route>
+        <Route exact path='/faqs' element={<FAQs />}></Route>
+        <Route exact path='*' element={<Error404 />}></Route>
       </Routes>
       <div>
         <Footer />
