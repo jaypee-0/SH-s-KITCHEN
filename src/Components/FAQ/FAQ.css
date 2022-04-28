@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Playfair+Display+SC&family=Roboto:wght@100&family=Space+Mono&display=swap');
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 1em 0;
+}
+
+.container {
+    /*background-color: */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.faqsBlock {
+    width: 100%;
+    /*background-color: beige;*/
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: .5em 1em;
+    background-color: #3f475d;
+    margin: 0 auto;
+    margin-bottom: .2em;
+    border-radius: .5em;
+}
+.question h2 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.question p {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.answer p {
+    font-size: 1.5rem;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: .2em;
+    text-align: center;
+}
 .container {
   width: 100%;
   max-width: 480px;
@@ -58,4 +108,3 @@
   font-size: 15px;
   line-height: 1.6;
 }
-/*# sourceMappingURL=FAQ.css.map */

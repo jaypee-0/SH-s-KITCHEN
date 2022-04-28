@@ -1,19 +1,20 @@
 import React from 'react';
-import Contactimg from "../../Assets/contactimg.jpg";
 import CallIcon from '@mui/icons-material/Call';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import "./contact.scss";
+import FAQ from '../FAQ/FAQ';
 
 function ContactUs() {
   return (
     <div className='contacts'>
-        <div className='leftside'
-        style={{ backgroundImage: `url(${Contactimg})` }}>
-    </div>
-    <div className='rightside'>
+        <div className='leftside'>
             <h1>
                 <strong>Want To Contact Us?</strong> 
             </h1>
-            <p> <CallIcon /> 0728990011</p>
+            <p><CallIcon /> 0728990011
+            <br />
+            <LocationOnIcon />Jacaranda, Close, Lagos.
+            </p>
 
             <h2> Have any questions for us? Send us a message!</h2>
             <form id="contact-form" method="POST">
@@ -30,8 +31,11 @@ function ContactUs() {
                 </textarea>
                 <button type='submit'> Send Message</button>
             </form>
-    </div>
-
+      </div>
+      
+      <div className='rightside'>
+          <FAQ />
+      </div>
     </div>
   )
 }
