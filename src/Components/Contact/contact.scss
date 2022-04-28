@@ -2,30 +2,38 @@
     width: 100%;
     height: 90vh;
     display: flex;
+    /*background-color: #f68b1e*/;
   }
   
-  .contacts .leftSide {
-    height: 100%;
-    flex: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .contacts .rightSide {
+  .contacts .rightside {
     height: 100%;
     flex: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+  .contacts .leftside {
+    height: 100%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contacts .leftside p {
+    /*color: ghostwhite;*/
+    font-size: 20px;
+    font-weight: bold;
+  }
   
-  .contacts .rightSide h1 {
+  .contacts .leftSide h1 {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     font-weight: 10;
     font-size: 50px;
-    margin-left: 30px;
+    text-align: center;
+    /*color: #f68b1e;*/
   }
   
   form {
@@ -34,6 +42,7 @@
     width: auto;
     height: auto;
     padding: 30px;
+    /*background-color: aliceblue;*/
   }
   
   form input {
@@ -71,7 +80,7 @@
   form button {
     margin-top: 40px;
     width: 140px;
-    height: 40px;
+    height: 30px;
     border: none;
     background-color: #121619;
     color: whitesmoke;
