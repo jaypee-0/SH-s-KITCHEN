@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Playfair+Display+SC&family=Roboto:wght@100&family=Space+Mono&display=swap');
 
-h1 {
+.FAQ h1 {
     text-align: center;
     font-size: 3em;
     margin: 1em 0;
 }
 
-.container {
+.FAQ .container {
     /*background-color: */
     display: flex;
     justify-content: center;
@@ -48,13 +48,13 @@ h1 {
     padding: .2em;
     text-align: center;
 }
-.container {
+.FAQ .container {
   width: 100%;
   max-width: 480px;
   margin: auto;
 }
 
-.accordion {
+.FAQ .accordion {
   width: 100%;
   max-width: 540px;
   margin: 18px auto;
